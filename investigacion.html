@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylePrueba.css">
+    <style>
+        /* Estilos personalizados */
+        .card {
+            width: 100%; /* Haz que todas las cartas tengan el mismo ancho */
+            height: 100%; /* Haz que todas las cartas tengan el mismo alto */
+        }
+
+        .card-img-top {
+            width: 100%; /* Ajusta el ancho de la imagen para que llene la carta */
+            height: 100%; /* Ajusta la altura de la imagen para que llene la carta */
+            object-fit: cover; /* Ajusta la imagen para que llene la carta sin distorsión */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header style="background-color: #2cc69f; color: white; padding: 10px 0; text-align: center;">
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <!-- Logo de la universidad -->
+          <a class="navbar-brand" href="#">
+              <img src="/images/imgLogo/logo1.png" alt="Universidad Logo" width="200" height="100">
+          </a>
+          <!-- Botón de hamburguesa para dispositivos móviles -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Elementos de navegación -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" href="Investigacion.html">Investigación</a>
+                      <!-- Enlace a Investigación.html -->
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="Zonas.html">Zonas</a> <!-- Enlace a Zonas.html -->
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="Departamentos.html">Departamentos</a>
+                      <!-- Enlace a Departamentos.html -->
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="Admision.html">Admisión</a> <!-- Enlace a Admisión.html -->
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="Contacto.html">Contacto</a> <!-- Enlace a Contacto.html -->
+                  </li>
+              </ul>
+          </div>
+        </nav>
+      </header>
+    <main>
+        <!-- Main Content -->
+        <div class="container">
+
+            <section>
+                <h2>Últimas noticias</h2>
+                <img class="imagenNoticia" src="images/imagen1.jpg" alt="noticia">
+                <p>Texto explicativo sobre la Noticia 1.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem facilis tempora ducimus ipsa
+                    deleniti non voluptates repellendus. Quae vitae, non, dicta tempora dolores, ea sit id iusto
+                    nobis animi suscipit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe odit
+                    sequi aliquid, dignissimos, possimus dolores ullam rerum cupiditate nam consequatur sunt
+                    blanditiis laudantium repellendus quod quas odio ipsum accusantium tempora!
+                </p>
+            </section>
+            <section class="card-container mb-5">
+            <h2>Últimas noticias</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"> <!-- Organizar en columnas -->
+                <!-- Noticia 1 -->
+                <div class="col">
+                    <div class="card">
+                        <img src="/images/noticia1.jpg" class="card-img-top" alt="Noticia 1">
+                        <div class="card-body">
+                            <p class="card-text">Texto explicativo sobre la Noticia 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Noticia 2 -->
+                <div class="col">
+                    <div class="card">
+                        <img src="/images/noticia2.jpg" class="card-img-top" alt="Noticia 2">
+                        <div class="card-body">
+                            <p class="card-text">Texto explicativo sobre la Noticia 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Noticia 3 -->
+                <div class="col">
+                    <div class="card">
+                        <img src="/images/noticia3.jpg" class="card-img-top" alt="Noticia 3">
+                        <div class="card-body">
+                            <p class="card-text">Texto explicativo sobre la Noticia 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </div>
+
+
+    </main>
+  <!-- Footer -->
+  <footer class="row" style="background-color: #02785d; color: white; padding: 20px 0; text-align: center; margin: 0;">
+    <!-- Información de Contacto -->
+    <div class="col-4 footer-info">
+      <h3>Información de Contacto</h3>
+      <p>Teléfono: 123-456-7890</p>
+      <p>Dirección: Calle Principal, Ciudad</p>
+    </div>
+    <!-- Mapa de Ubicación -->
+    <div class="col-4 footer-map">
+      <h3>Ubicación</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30659.110184315546!2d-0.1426685500000016!3d51.501833449999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDQ5JzI5LjYiTiAwwrAzMSc1NC43IkU!5e0!3m2!1sen!2sus!4v1604381199469!5m2!1sen!2sus" width="200" height="100" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <!-- Redes Sociales -->
+    <div class="col-4 footer-social">
+      <h3>Redes Sociales</h3>
+      <ul class="list-unstyled">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
